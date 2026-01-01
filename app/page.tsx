@@ -776,6 +776,290 @@ export default function Home() {
 		</div>
 		
 	</section>
+
+	{/*  Pricing Section */}
+	<section className="pricing-section" id="pricing">
+		<div className="auto-container">
+			<div className="sec-title centered style-three">
+				<div className="title"><span>pr</span>icing</div>
+				<h2>We have offered the <span>best </span>p<span>ricing</span> <br/> to make life easier!</h2>
+			</div>
+			
+			<div className="pricing-tabs tabs-box">
+                    
+				{/*  Title Column */}
+				<div className="title-column">
+					
+					{/*  Tab Btns */}
+					<ul className="tab-buttons clearfix">
+						<li data-tab="#prod-monthly" className="tab-btn monthly active-btn">Monthly</li>
+						<li className="boll"><span className="round"></span></li>
+						<li data-tab="#prod-yearly" className="tab-btn yearly">Yearly</li>
+					</ul>						
+					
+				</div>
+				
+				{/* Tabs Container*/}
+				<div className="tabs-content">
+					
+					<div className="patern-layer-three paroller" data-paroller-factor="0.30" data-paroller-factor-lg="0.60" data-paroller-type="foreground" data-paroller-direction="horizontal" style={{backgroundImage: "url(images/icons/pattern-19.png)"}}></div>
+					<div className="patern-layer-four paroller" data-paroller-factor="-0.30" data-paroller-factor-lg="0.60" data-paroller-type="foreground" data-paroller-direction="horizontal" style={{backgroundImage: "url(images/icons/pattern-20.png)"}}></div>
+					
+					{/* Tab*/}
+					<div className="tab active-tab" id="prod-monthly">
+						<div className="content">
+							<div className="row clearfix">
+								
+								{/*  Price Block */}
+								<div className="price-block col-lg-4 col-md-6 col-sm-12">
+									<div className="inner-box">
+										<div className="patern-layer-two" style={{backgroundImage: "url(images/icons/pattern-18.png)"}}></div>
+										<div className="patern-layer-one" style={{backgroundImage: "url(images/icons/pattern-17.png)"}}></div>
+										<div className="upper-box">
+											<div className="icon-box">
+												<span className="icon flaticon-paper-plane"></span>
+											</div>
+											<div className="title">Premeum</div>
+											<h3>$39.99</h3>
+										</div>
+										<div className="middle-box">
+											<div className="price-title">unLimited access</div>
+											<ul className="price-list">
+												<li><i className="fa fa-remove"></i>100 MB Disk Space</li>
+												<li><i className="fa fa-check"></i>2 Subdo mains dolor</li>
+												<li><i className="fa fa-remove"></i>5 Email Accounts</li>
+												<li><i className="fa fa-remove"></i>No License</li>
+												<li><i className="fa fa-check"></i>Phone & Mail Support</li>
+											</ul>
+										</div>
+										<div className="lower-box">
+											<a href="#" className="theme-btn plan-btn">choose plan</a>
+											<a href="#" className="trial">Get a free trial now!</a>
+										</div>
+									</div>
+								</div>
+								
+								{/*  Price Block */}
+								<div className="price-block col-lg-4 col-md-6 col-sm-12">
+									<div className="inner-box">
+										<div className="patern-layer-two" style={{backgroundImage: "url(images/icons/pattern-18.png)"}}></div>
+										<div className="patern-layer-one" style={{backgroundImage: "url(images/icons/pattern-17.png)"}}></div>
+										<div className="upper-box">
+											<div className="icon-box">
+												<span className="icon flaticon-plane"></span>
+											</div>
+											<div className="title">Standrad</div>
+											<h3>$59.99</h3>
+										</div>
+										<div className="middle-box">
+											<div className="price-title">Limited access</div>
+											<ul className="price-list">
+												<li><i className="fa fa-remove"></i>100 MB Disk Space</li>
+												<li><i className="fa fa-check"></i>2 Subdo mains dolor</li>
+												<li><i className="fa fa-remove"></i>5 Email Accounts</li>
+												<li><i className="fa fa-remove"></i>No License</li>
+												<li><i className="fa fa-check"></i>Phone & Mail Support</li>
+											</ul>
+										</div>
+										<div className="lower-box">
+											<a href="#" className="theme-btn plan-btn">choose plan</a>
+											<a href="#" className="trial">Get a free trial now!</a>
+										</div>
+									</div>
+								</div>
+								
+								{/*  Price Block */}
+								<div className="price-block col-lg-4 col-md-6 col-sm-12">
+									<div className="inner-box">
+										<div className="patern-layer-two" style={{backgroundImage: "url(images/icons/pattern-18.png)"}}></div>
+										<div className="patern-layer-one" style={{backgroundImage: "url(images/icons/pattern-17.png)"}}></div>
+										<div className="upper-box">
+											<div className="icon-box">
+												<span className="icon icons-rocket-ship"></span>
+											</div>
+											<div className="title">Premeum</div>
+											<h3>$89.99</h3>
+										</div>
+										<div className="middle-box">
+											<div className="price-title">unLimited access</div>
+											<ul className="price-list">
+												<li><i className="fa fa-remove"></i>100 MB Disk Space</li>
+												<li><i className="fa fa-check"></i>2 Subdo mains dolor</li>
+												<li><i className="fa fa-remove"></i>5 Email Accounts</li>
+												<li><i className="fa fa-remove"></i>No License</li>
+												<li><i className="fa fa-check"></i>Phone & Mail Support</li>
+											</ul>
+										</div>
+										<div className="lower-box">
+											<a href="#" className="theme-btn plan-btn">choose plan</a>
+											<a href="#" className="trial">Get a free trial now!</a>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							
+							{/*  Guarantee */}
+							<div className="guarantee"><span className="circle"></span>30 days money back guarantee!</div>
+						
+						</div>
+					</div>
+					
+					{/* Tab*/}
+					<div className="tab" id="prod-yearly">
+						<div className="content">
+							<div className="row clearfix">
+							
+								{/*  Price Block */}
+								<div className="price-block col-lg-4 col-md-6 col-sm-12">
+									<div className="inner-box">
+										<div className="patern-layer-two" style={{backgroundImage: "url(images/icons/pattern-18.png)"}}></div>
+										<div className="patern-layer-one" style={{backgroundImage: "url(images/icons/pattern-17.png)"}}></div>
+										<div className="upper-box">
+											<div className="icon-box">
+												<span className="icon flaticon-paper-plane"></span>
+											</div>
+											<div className="title">Premeum</div>
+											<h3>$99.99</h3>
+										</div>
+										<div className="middle-box">
+											<div className="price-title">unLimited access</div>
+											<ul className="price-list">
+												<li><i className="fa fa-remove"></i>100 MB Disk Space</li>
+												<li><i className="fa fa-check"></i>2 Subdo mains dolor</li>
+												<li><i className="fa fa-remove"></i>5 Email Accounts</li>
+												<li><i className="fa fa-remove"></i>No License</li>
+												<li><i className="fa fa-check"></i>Phone & Mail Support</li>
+											</ul>
+										</div>
+										<div className="lower-box">
+											<a href="#" className="theme-btn plan-btn">choose plan</a>
+											<a href="#" className="trial">Get a free trial now!</a>
+										</div>
+									</div>
+								</div>
+								
+								{/*  Price Block */}
+								<div className="price-block col-lg-4 col-md-6 col-sm-12">
+									<div className="inner-box">
+										<div className="patern-layer-two" style={{backgroundImage: "url(images/icons/pattern-18.png)"}}></div>
+										<div className="patern-layer-one" style={{backgroundImage: "url(images/icons/pattern-17.png)"}}></div>
+										<div className="upper-box">
+											<div className="icon-box">
+												<span className="icon flaticon-plane"></span>
+											</div>
+											<div className="title">Standrad</div>
+											<h3>$149.99</h3>
+										</div>
+										<div className="middle-box">
+											<div className="price-title">Limited access</div>
+											<ul className="price-list">
+												<li><i className="fa fa-remove"></i>100 MB Disk Space</li>
+												<li><i className="fa fa-check"></i>2 Subdo mains dolor</li>
+												<li><i className="fa fa-remove"></i>5 Email Accounts</li>
+												<li><i className="fa fa-remove"></i>No License</li>
+												<li><i className="fa fa-check"></i>Phone & Mail Support</li>
+											</ul>
+										</div>
+										<div className="lower-box">
+											<a href="#" className="theme-btn plan-btn">choose plan</a>
+											<a href="#" className="trial">Get a free trial now!</a>
+										</div>
+									</div>
+								</div>
+								
+								{/*  Price Block */}
+								<div className="price-block col-lg-4 col-md-6 col-sm-12">
+									<div className="inner-box">
+										<div className="patern-layer-two" style={{backgroundImage: "url(images/icons/pattern-18.png)"}}></div>
+										<div className="patern-layer-one" style={{backgroundImage: "url(images/icons/pattern-17.png)"}}></div>
+										<div className="upper-box">
+											<div className="icon-box">
+												<span className="icon icons-rocket-ship"></span>
+											</div>
+											<div className="title">Premeum</div>
+											<h3>$199.99</h3>
+										</div>
+										<div className="middle-box">
+											<div className="price-title">unLimited access</div>
+											<ul className="price-list">
+												<li><i className="fa fa-remove"></i>100 MB Disk Space</li>
+												<li><i className="fa fa-check"></i>2 Subdo mains dolor</li>
+												<li><i className="fa fa-remove"></i>5 Email Accounts</li>
+												<li><i className="fa fa-remove"></i>No License</li>
+												<li><i className="fa fa-check"></i>Phone & Mail Support</li>
+											</ul>
+										</div>
+										<div className="lower-box">
+											<a href="#" className="theme-btn plan-btn">choose plan</a>
+											<a href="#" className="trial">Get a free trial now!</a>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	{/*  Faq Section */}
+	<section className="faq-section1">
+		<div className="auto-container">
+			<div className="sec-title centered style-four">
+				<div className="title"><span>FA</span>Q</div>
+				<h2>Learn about new features from <br/> <span>fre</span>q<span>uentl</span>y asked question</h2>
+			</div>
+			<div className="inner-container1">
+				<div className="row clearfix">
+				
+					{/*  Faq Column */}
+					<div className="faq-column1 col-lg-6 col-md-12 col-sm-12">
+						<h3>What should I include in App?</h3>
+						<div className="text">Lorem ipsum dolor sit amet consecte tur adipiscing elit sed <a href="#">eiusmod tempor incididunt</a> ut labore.</div>
+					</div>
+					
+					{/*  Faq Column */}
+					<div className="faq-column1 col-lg-6 col-md-12 col-sm-12">
+						<h3>Can users choose to install the app?</h3>
+						<div className="text">We’re a company built on open source. It all began with Ionic Framework - the world's most popular open source for building cross-platform mobile and Progressive Web Apps.</div>
+					</div>
+					
+					{/*  Faq Column */}
+					<div className="faq-column1 col-lg-6 col-md-12 col-sm-12">
+						<h3>How does the Moodle app work?</h3>
+						<div className="text">The apps you build with Ionic leverage the power and stability of the open web - the most time-tested universal runtime in the world. The web has been around over two decades.</div>
+					</div>
+					
+					{/*  Faq Column */}
+					<div className="faq-column1 col-lg-6 col-md-12 col-sm-12">
+						<h3>How do I disable installed apps?</h3>
+						<div className="text">Lorem ipsum dolor sit amet consecte tur adipiscing elit sed do eiusmod tempor incididunt ut labore.</div>
+					</div>
+					
+					{/*  Faq Column */}
+					<div className="faq-column1 col-lg-6 col-md-12 col-sm-12">
+						<h3>Does disabling apps free up space?</h3>
+						<div className="text">Lorem ipsum dolor sit amet consecte tur adipiscing elit sed <a href="#">eiusmod tempor incididunt</a> ut labore.</div>
+					</div>
+					
+					{/*  Faq Column */}
+					<div className="faq-column1 col-lg-6 col-md-12 col-sm-12">
+						<h3>Why are mobile apps important?</h3>
+						<div className="text">Lorem ipsum dolor sit amet consecte tur adipiscing elit sed do <a href="#">eiusmod tempor incididunt</a> ut labore.</div>
+					</div>
+					
+				</div>
+				{/*  Question */}
+				<div className="question">Still have a question? <a href="#">Contact us:</a> <strong>topapp@info.com</strong></div>
+				
+			</div>
+		</div>
+	</section>
   {/*  Main Footer */}
     <footer className="main-footer">
     	<div className="auto-container">
