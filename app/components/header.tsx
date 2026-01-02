@@ -14,7 +14,7 @@ const Header = () => {
                    	
                    	<div className="nav-outer clearfix">
 						{/* Mobile Navigation Toggler*/}
-                        <div className="mobile-nav-toggler"><span className="icon icons-menu-button"></span></div>
+                        <div className="mobile-nav-toggler"><i className="fa fa-bars" aria-hidden="true"></i></div>
 						{/*  Main Menu */}
 						<nav className="main-menu show navbar-expand-md">
 							<div className="navbar-header">

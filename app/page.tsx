@@ -1060,6 +1060,180 @@ export default function Home() {
 			</div>
 		</div>
 	</section>
+
+	{/*  Blog Section */}
+	<section className="blog-section" id="blog">
+		<div className="auto-container">
+			{/*  Sec Title */}
+			<div className="sec-title style-two">
+				<div className="clearfix">
+					<div className="pull-left">
+						<div className="title"><span>Bl</span>og</div>
+						<h2>We want to <span>share our</span> succes <br/> by our latest blog.</h2>
+					</div>
+					<div className="pull-right">
+						<div className="text">Lorem Ipsum is simply dummy text of the printing and type <br/> setting industry. Lorem Ipsum has been the industry's stan <br/> dard dummy text ever since the 1500s.</div>
+					</div>
+				</div>
+			</div>
+			<div className="row clearfix">
+				
+				{/*  News Block */}
+				<div className="news-block col-lg-4 col-md-6 col-sm-12">
+					<div className="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div className="image">
+							<a href="#"><img src="/images/resource/news-1.png" alt="" /></a>
+						</div>
+						<div className="lower-content">
+							<ul className="post-meta">
+								<li><span className="icon icons-calendar-2"></span>September 12, 2020</li>
+								<li><span className="icon icons-user-4"></span>Admin</li>
+							</ul>
+							<h3><a href="#">Organisationaly teams are just like families.</a></h3>
+							<div className="text">Lorem Ipsum is simply dummy text the printing and setting industry. Lorm Ipsum has been the industry's stanard dummy text ever.</div>
+						</div>
+					</div>
+				</div>
+				
+				{/*  News Block */}
+				<div className="news-block col-lg-4 col-md-6 col-sm-12">
+					<div className="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div className="image">
+							<a href="#"><img src="/images/resource/news-2.png" alt="" /></a>
+						</div>
+						<div className="lower-content">
+							<ul className="post-meta">
+								<li><span className="icon icons-calendar-2"></span>September 12, 2020</li>
+								<li><span className="icon icons-user-4"></span>Admin</li>
+							</ul>
+							<h3><a href="#">Revitalising your people in a retail downturn...</a></h3>
+							<div className="text">Lorem Ipsum is simply dummy text the printing and setting industry. Lorm Ipsum has been the industry's stanard dummy text ever.</div>
+						</div>
+					</div>
+				</div>
+				
+				{/*  News Block */}
+				<div className="news-block col-lg-4 col-md-6 col-sm-12">
+					<div className="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div className="image">
+							<a href="#"><img src="/images/resource/news-3.png" alt="" /></a>
+						</div>
+						<div className="lower-content">
+							<ul className="post-meta">
+								<li><span className="icon icons-calendar-2"></span>September 12, 2020</li>
+								<li><span className="icon icons-user-4"></span>Admin</li>
+							</ul>
+							<h3><a href="#">Regional Managers time management.</a></h3>
+							<div className="text">Lorem Ipsum is simply dummy text the printing and setting industry. Lorm Ipsum has been the industry's stanard dummy text ever.</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	{/*  Contact Section */}
+	<section className="contact-section" id="contact">
+		<div className="auto-container">
+			<div className="row clearfix">
+				
+				{/*  Info Column */}
+				<div className="info-column col-lg-6 col-md-12 col-sm-12">
+					<div className="inner-column">
+						<div className="patern-layer-one" style={{backgroundImage: "url(images/background/pattern-12.png)"}}></div>
+						<div className="patern-layer-two" style={{backgroundImage: "url(images/background/pattern-13.png)"}}></div>
+						<div className="patern-layer-three paroller" data-paroller-factor="-0.10" data-paroller-factor-lg="0.08" data-paroller-type="foreground" data-paroller-direction="horizontal" style={{backgroundImage: "url(images/background/pattern-14.png)"}}></div>
+						<ul className="info-list">
+							<li>
+								<span className="icon flaticon-address"></span>
+								<strong>Our head office address:</strong>
+								3556 Hartford Way Vlg, Mount Pleasant, SC, <br/> 29466, Australia.
+							</li>
+							<li>
+								<span className="icon flaticon-telephone"></span>
+								<strong>Call for help:</strong>
+								<a href="tel:734-697-2907">(734) 697-2907</a><br/>
+								<a href="tel:843-971-1906">(843) 971-1906</a>
+							</li>
+							<li>
+								<span className="icon flaticon-invite"></span>
+								<strong>Mail us:</strong>
+								<a className="mailto:noreply@envato.com" href="#">noreply@envato.com</a><br/>
+								<a className="mailto:noreply@envato.com" href="#">noreply@topapp.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				{/*  Form Column */}
+				<div className="form-column col-lg-6 col-md-12 col-sm-12">
+					<div className="inner-column">
+						<div className="sec-title style-three">
+							<div className="title"><span>Co</span>ntact</div>
+							<h2>Contact with our support <br/> during <span>emer</span>g<span>enc</span>y!</h2>
+						</div>
+						
+						{/*  Default Form */}
+						<div className="default-form">
+							<form method="post" action="sendemail.php" id="contact-form">
+								<div className="row clearfix">
+									
+									<div className="col-lg-6 col-md-6 col-sm-12 form-group">
+										<input type="text" name="username" placeholder="Full Name *" required/>
+									</div>
+									
+									<div className="col-lg-6 col-md-6 col-sm-12 form-group">
+										<input type="text" name="lastname" placeholder="Last Name *" required/>
+									</div>
+									
+									<div className="col-lg-6 col-md-6 col-sm-12 form-group">
+										<input type="email" name="email" placeholder="Your mail *" required/>
+									</div>
+									
+									<div className="col-lg-6 col-md-6 col-sm-12 form-group">
+										<input type="text" name="phone" placeholder="Phone number *" required/>
+									</div>
+									
+									<div className="col-lg-12 col-md-12 col-sm-12 form-group">
+										<textarea name="message" placeholder="Message..."></textarea>
+									</div>
+								
+									<div className="col-lg-12 col-md-12 col-sm-12 form-group">
+										<button className="theme-btn submit-btn" type="submit" name="submit-form"><span className="txt"> <i className="fa fa-arrow-circle-right"></i> &nbsp; Send now</span></button>
+									</div>
+									
+								</div>
+							</form>
+								
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	{/*  Subscribe Section */}
+	<section className="subscribe-section">
+		<div className="patern-layer-one" style={{backgroundImage: "url(images/background/pattern-15.png)"}}></div>
+		<div className="auto-container">
+			<div className="sec-title centered style-four">
+				<div className="title"><span>Su</span>bscription</div>
+				<h2>Always know what’s happening in the <br/> world of applications. Recieve all <br/> latest p<span>ost in</span> y<span>our inbox.</span></h2>
+			</div>
+			
+			<div className="subscribe-form">
+				<form method="post" action="contact.html">
+					<div className="form-group">
+						<input type="email" name="email" defaultValue="" placeholder="your mail address..." required/>
+						<button type="submit" className="theme-btn btn-style-two">Subscrib now</button>
+					</div>
+				</form>
+			</div>
+			<div className="email">* Your mail address will be fully secure . We don’t share!</div>
+		</div>
+	</section>
   {/*  Main Footer */}
     <footer className="main-footer">
     	<div className="auto-container">
