@@ -3270,8 +3270,6 @@ img{
 }
 
 .swiper-wrapper{
-	height: 630px;
-	width: 320px;
 }
 
 .row.appScreenshotCarousel-container.swiper-container-horizontal.swiper-container-3d.swiper-container-coverflow {
@@ -3297,6 +3295,16 @@ img{
 	z-index: 2;
 
 	border-radius: 40px;
+}
+
+.appScreenshotCarousel-container .swiper-slide {
+	width: 285px;
+	height: 622px;
+}
+
+.appScreenshotCarousel-container .swiper-wrapper {
+	padding: 0;
+	align-items: center;
 }
 
 .swiper-slide.swiper-slide-active {

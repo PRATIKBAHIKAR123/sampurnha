@@ -1,9 +1,56 @@
 
+'use client';
+
+import { useEffect, useRef } from "react";
+import Script from "next/script";
 import Header from "./components/header";
 
 export default function Home() {
+  const swiperInitialized = useRef(false);
+
+  const initSwiper = () => {
+    // @ts-ignore
+    if (typeof window !== 'undefined' && window.Swiper && !swiperInitialized.current) {
+      // @ts-ignore
+      new window.Swiper('.appScreenshotCarousel-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        loop: true,
+        autoplay: 3000,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        coverflow: {
+          rotate: 0,
+          stretch: 80,
+          depth: 200,
+          modifier: 1,
+          slideShadows: false,
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 'auto'
+          },
+          768: {
+            slidesPerView: 'auto'
+          },
+          640: {
+            slidesPerView: 'auto'
+          }
+        }
+      });
+      swiperInitialized.current = true;
+    }
+  };
+
+  useEffect(() => {
+    initSwiper();
+  }, []);
+
   return (
     <>
+    <Script src="/js/swiper.min.js" onLoad={initSwiper} />
     <Header/>
     <div className="page-wrapper">
  	
@@ -295,7 +342,7 @@ export default function Home() {
 	<section className="apps-section" id="how-works">
 		<div className="auto-container">
 		
-			{/* <div className="ct-dot-animated">
+			<div className="ct-dot-animated">
 				<div className="ct-dot-container">
 					<div className="ct-dot-item">
 						<span></span>
@@ -316,7 +363,7 @@ export default function Home() {
 						<span></span>
 					</div>
 				</div>
-			</div> */}
+			</div>
 		
 			{/*  App Block */}
 			<div className="app-block">
@@ -675,20 +722,20 @@ export default function Home() {
 				<h2>App screenshots will be <span>im</span>p<span>ortant</span> <br/> to know properly the app! lifestyle app!</h2>
 			</div>
 			
-			<div className="row appScreenshotCarousel-container swiper-container">
+			<div className="row appScreenshotCarousel-container swiper-container" style={{ height: "700px" }}>
 				<div className="screen-mobile-image"></div>
 				<div className="swiper-wrapper">
-					<div className="swiper-slide" style={{backgroundImage: "url(images/resource/slider-01.jpg)"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(images/resource/slider-02.png)"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(images/resource/slider-03.png)"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(images/resource/slider-04.png)"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(images/resource/slider-05.png)"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(images/resource/slider-02.png)"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(images/resource/slider-01.jpg)"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(images/resource/slider-02.png)"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(images/resource/slider-03.png)"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(images/resource/slider-04.png)"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(images/resource/slider-05.png)"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-01.jpg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-02.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-03.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-04.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-05.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-02.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-01.jpg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-02.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-03.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-04.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-05.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
 				</div>
 				{/*  Add Arrows */}
 			</div>
