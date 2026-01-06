@@ -3434,17 +3434,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(1) {
-    -webkit-animation: floating 5.26667s ease-in-out infinite alternate;
-    animation: floating 5.26667s ease-in-out infinite alternate;
+    -webkit-animation: floating 5.26667s ease-in-out infinite alternate, bubble-v 15.8s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 5.26667s ease-in-out infinite alternate, bubble-v 15.8s linear infinite, shake-v 2s ease-in-out infinite alternate;
     bottom: 25%;
     left: 0%
-}
-
-@media (min-width:992px) {
-    .bubbles-wrapper .bubble:nth-child(1) {
-        -webkit-animation: bubble-v 15.8s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 15.8s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(1) {
@@ -3452,17 +3445,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(2) {
-    -webkit-animation: floating 7.23333s ease-in-out infinite alternate;
-    animation: floating 7.23333s ease-in-out infinite alternate;
+    -webkit-animation: floating 7.23333s ease-in-out infinite alternate, bubble-v 21.7s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 7.23333s ease-in-out infinite alternate, bubble-v 21.7s linear infinite, shake-v 2s ease-in-out infinite alternate;
     bottom: 10%;
     left: 15%
-}
-
-@media (min-width:992px) {
-    .bubbles-wrapper .bubble:nth-child(2) {
-        -webkit-animation: bubble-v 21.7s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 21.7s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(2) {
@@ -3470,17 +3456,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(3) {
-    -webkit-animation: floating 9.6s ease-in-out infinite alternate;
-    animation: floating 9.6s ease-in-out infinite alternate;
+    -webkit-animation: floating 9.6s ease-in-out infinite alternate, bubble-v 28.8s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 9.6s ease-in-out infinite alternate, bubble-v 28.8s linear infinite, shake-v 2s ease-in-out infinite alternate;
     bottom: 50%;
     left: 22%
-}
-
-@media (min-width:992px) {
-    .bubbles-wrapper .bubble:nth-child(3) {
-        -webkit-animation: bubble-v 28.8s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 28.8s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(3) {
@@ -3488,17 +3467,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(4) {
-    -webkit-animation: floating 6.6s ease-in-out infinite alternate;
-    animation: floating 6.6s ease-in-out infinite alternate;
+    -webkit-animation: floating 6.6s ease-in-out infinite alternate, bubble-v 19.8s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 6.6s ease-in-out infinite alternate, bubble-v 19.8s linear infinite, shake-v 2s ease-in-out infinite alternate;
     top: 25%;
     left: 71%
-}
-
-@media (min-width:992px) {
-    .bubbles-wrapper .bubble:nth-child(4) {
-        -webkit-animation: bubble-v 19.8s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 19.8s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(4) {
@@ -3506,17 +3478,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(5) {
-    -webkit-animation: floating 6.5s ease-in-out infinite alternate;
-    animation: floating 6.5s ease-in-out infinite alternate;
+    -webkit-animation: floating 6.5s ease-in-out infinite alternate, bubble-v 19.5s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 6.5s ease-in-out infinite alternate, bubble-v 19.5s linear infinite, shake-v 2s ease-in-out infinite alternate;
     bottom: 0%;
     left: 60%
-}
-
-@media (min-width:992px) {
-    .bubbles-wrapper .bubble:nth-child(5) {
-        -webkit-animation: bubble-v 19.5s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 19.5s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(5) {
@@ -3524,17 +3489,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(6) {
-    -webkit-animation: floating 7.56667s ease-in-out infinite alternate;
-    animation: floating 7.56667s ease-in-out infinite alternate;
+    -webkit-animation: floating 7.56667s ease-in-out infinite alternate, bubble-v 22.7s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 7.56667s ease-in-out infinite alternate, bubble-v 22.7s linear infinite, shake-v 2s ease-in-out infinite alternate;
     bottom: 74%;
     left: 5%
-}
-
-@media (min-width:992px) {
-    .bubbles-wrapper .bubble:nth-child(6) {
-        -webkit-animation: bubble-v 22.7s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 22.7s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(6) {
@@ -3542,17 +3500,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(7) {
-    -webkit-animation: floating 9.16667s ease-in-out infinite alternate;
-    animation: floating 9.16667s ease-in-out infinite alternate;
+    -webkit-animation: floating 9.16667s ease-in-out infinite alternate, bubble-v 27.5s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 9.16667s ease-in-out infinite alternate, bubble-v 27.5s linear infinite, shake-v 2s ease-in-out infinite alternate;
     bottom: 80%;
     left: 50%
-}
-
-@media (min-width:992px) {
-    .bubbles-wrapper .bubble:nth-child(7) {
-        -webkit-animation: bubble-v 27.5s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 27.5s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(7) {
@@ -3560,17 +3511,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(8) {
-    -webkit-animation: floating 7.66667s ease-in-out infinite alternate;
-    animation: floating 7.66667s ease-in-out infinite alternate;
+    -webkit-animation: floating 7.66667s ease-in-out infinite alternate, bubble-v 23s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 7.66667s ease-in-out infinite alternate, bubble-v 23s linear infinite, shake-v 2s ease-in-out infinite alternate;
     bottom: 15%;
     left: 42%
-}
-
-@media (min-width:992px) {
-    .bubbles-wrapper .bubble:nth-child(8) {
-        -webkit-animation: bubble-v 23s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 23s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(8) {
@@ -3578,17 +3522,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(9) {
-    -webkit-animation: floating 6.46667s ease-in-out infinite alternate;
-    animation: floating 6.46667s ease-in-out infinite alternate;
+    -webkit-animation: floating 6.46667s ease-in-out infinite alternate, bubble-v 19.4s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 6.46667s ease-in-out infinite alternate, bubble-v 19.4s linear infinite, shake-v 2s ease-in-out infinite alternate;
     bottom: 50%;
     left: 30%
-}
-
-@media (min-width:992px) {
-    .bubbles-wrapper .bubble:nth-child(9) {
-        -webkit-animation: bubble-v 19.4s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 19.4s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(9) {
@@ -3596,17 +3533,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(10) {
-    -webkit-animation: floating 6.06667s ease-in-out infinite alternate;
-    animation: floating 6.06667s ease-in-out infinite alternate;
+    -webkit-animation: floating 6.06667s ease-in-out infinite alternate, bubble-v 18.2s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 6.06667s ease-in-out infinite alternate, bubble-v 18.2s linear infinite, shake-v 2s ease-in-out infinite alternate;
     top: 80%;
     left: 20%
-}
-
-@media (min-width:992px) {
-    .bubbles-wrapper .bubble:nth-child(10) {
-        -webkit-animation: bubble-v 18.2s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 18.2s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(10) {
@@ -3614,17 +3544,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(11) {
-    -webkit-animation: floating 5.46667s ease-in-out infinite alternate;
-    animation: floating 5.46667s ease-in-out infinite alternate;
+    -webkit-animation: floating 5.46667s ease-in-out infinite alternate, bubble-v 16.4s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 5.46667s ease-in-out infinite alternate, bubble-v 16.4s linear infinite, shake-v 2s ease-in-out infinite alternate;
     bottom: 60%;
     right: 15%
-}
-
-@media (min-width:992px) {
-    .bubbles-wrapper .bubble:nth-child(11) {
-        -webkit-animation: bubble-v 16.4s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 16.4s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(11) {
@@ -3632,17 +3555,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(12) {
-    -webkit-animation: floating 5.93333s ease-in-out infinite alternate;
-    animation: floating 5.93333s ease-in-out infinite alternate;
+    -webkit-animation: floating 5.93333s ease-in-out infinite alternate, bubble-v 17.8s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 5.93333s ease-in-out infinite alternate, bubble-v 17.8s linear infinite, shake-v 2s ease-in-out infinite alternate;
     bottom: 0%;
     right: 5%
-}
-
-@media (min-width:992px) {
-    .bubbles-wrapper .bubble:nth-child(12) {
-        -webkit-animation: bubble-v 17.8s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 17.8s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(12) {
@@ -3650,17 +3566,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(13) {
-    -webkit-animation: floating 6.4s ease-in-out infinite alternate;
-    animation: floating 6.4s ease-in-out infinite alternate;
+    -webkit-animation: floating 6.4s ease-in-out infinite alternate, bubble-v 19.2s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 6.4s ease-in-out infinite alternate, bubble-v 19.2s linear infinite, shake-v 2s ease-in-out infinite alternate;
     bottom: 70%;
     left: 50%
-}
-
-@media (min-width:992px) {
-    .bubbles-wrapper .bubble:nth-child(13) {
-        -webkit-animation: bubble-v 19.2s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 19.2s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(13) {
@@ -3668,17 +3577,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(14) {
-    -webkit-animation: floating 4.06667s ease-in-out infinite alternate;
-    animation: floating 4.06667s ease-in-out infinite alternate;
+    -webkit-animation: floating 4.06667s ease-in-out infinite alternate, bubble-v 12.2s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 4.06667s ease-in-out infinite alternate, bubble-v 12.2s linear infinite, shake-v 2s ease-in-out infinite alternate;
     bottom: 75%;
     left: 7%
-}
-
-@media (min-width:992px) {
-    .bubbles-wrapper .bubble:nth-child(14) {
-        -webkit-animation: bubble-v 12.2s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 12.2s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(14) {
@@ -3686,17 +3588,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(15) {
-    -webkit-animation: floating 6.6s ease-in-out infinite alternate;
-    animation: floating 6.6s ease-in-out infinite alternate;
+    -webkit-animation: floating 6.6s ease-in-out infinite alternate, bubble-v 19.8s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 6.6s ease-in-out infinite alternate, bubble-v 19.8s linear infinite, shake-v 2s ease-in-out infinite alternate;
     bottom: 50%;
     left: 90%
-}
-
-@media (min-width:992px) {
-    .bubbles-wrapper .bubble:nth-child(15) {
-        -webkit-animation: bubble-v 19.8s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 19.8s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(15) {
@@ -3704,18 +3599,10 @@ img{
 }
 
 .bubbles-wrapper .bubble:nth-child(16) {
-    -webkit-animation: floating 6.86667s ease-in-out infinite alternate;
-    animation: floating 6.86667s ease-in-out infinite alternate;
+    -webkit-animation: floating 6.86667s ease-in-out infinite alternate, bubble-v 20.6s linear infinite, shake-v 2s ease-in-out infinite alternate;
+    animation: floating 6.86667s ease-in-out infinite alternate, bubble-v 20.6s linear infinite, shake-v 2s ease-in-out infinite alternate;
     bottom: 68%;
     left: 64%
-}
-
-@media (min-width:992px) {
-	
-    .bubbles-wrapper .bubble:nth-child(16) {
-        -webkit-animation: bubble-v 20.6s linear infinite, shake-v 2s ease-in-out infinite alternate;
-        animation: bubble-v 20.6s linear infinite, shake-v 2s ease-in-out infinite alternate
-    }
 }
 
 .bubbles-wrapper .bubble.top-initial:nth-child(16) {
@@ -3820,98 +3707,7 @@ img{
             opacity: 0
         }
     }
-    @-webkit-keyframes bubble-v {
-        0% {
-            -webkit-transform: translateY(0);
-            transform: translateY(0)
-        }
-        100% {
-            -webkit-transform: translateY(-640px);
-            transform: translateY(-640px)
-        }
-    }
-    @keyframes bubble-v {
-        0% {
-            -webkit-transform: translateY(0);
-            transform: translateY(0)
-        }
-        100% {
-            -webkit-transform: translateY(-640px);
-            transform: translateY(-640px)
-        }
-    }
-    @-webkit-keyframes bubble-v-left {
-        0% {
-            margin-bottom: 0;
-            opacity: .1
-        }
-        20% {
-            opacity: 1
-        }
-        100% {
-            margin-bottom: 640px;
-            opacity: 1;
-            left: 0
-        }
-    }
-    @keyframes bubble-v-left {
-        0% {
-            margin-bottom: 0;
-            opacity: .1
-        }
-        20% {
-            opacity: 1
-        }
-        100% {
-            margin-bottom: 640px;
-            opacity: 1;
-            left: 0
-        }
-    }
-    @-webkit-keyframes bubble-v-right {
-        0% {
-            margin-bottom: 0;
-            opacity: .1
-        }
-        20% {
-            opacity: 1
-        }
-        100% {
-            margin-bottom: 640px;
-            opacity: 1;
-            left: 100%
-        }
-    }
-    @keyframes bubble-v-right {
-        0% {
-            margin-bottom: 0;
-            opacity: .1
-        }
-        20% {
-            opacity: 1
-        }
-        100% {
-            margin-bottom: 640px;
-            opacity: 1;
-            left: 100%
-        }
-    }
-    @-webkit-keyframes shake-v {
-        0% {
-            margin-left: 0
-        }
-        100% {
-            margin-left: 20px
-        }
-    }
-    @keyframes shake-v {
-        0% {
-            margin-left: 0
-        }
-        100% {
-            margin-left: 20px
-        }
-    }
+    
     button:focus {
         outline: 0
     }
@@ -3933,6 +3729,99 @@ img{
 		color: #212529;
 		padding:4px 8px;
 		background-color: #fff
+	}
+}
+
+@-webkit-keyframes bubble-v {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
+	100% {
+		-webkit-transform: translateY(-640px);
+		transform: translateY(-640px)
+	}
+}
+@keyframes bubble-v {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
+	100% {
+		-webkit-transform: translateY(-640px);
+		transform: translateY(-640px)
+	}
+}
+@-webkit-keyframes bubble-v-left {
+	0% {
+		margin-bottom: 0;
+		opacity: .1
+	}
+	20% {
+		opacity: 1
+	}
+	100% {
+		margin-bottom: 640px;
+		opacity: 1;
+		left: 0
+	}
+}
+@keyframes bubble-v-left {
+	0% {
+		margin-bottom: 0;
+		opacity: .1
+	}
+	20% {
+		opacity: 1
+	}
+	100% {
+		margin-bottom: 640px;
+		opacity: 1;
+		left: 0
+	}
+}
+@-webkit-keyframes bubble-v-right {
+	0% {
+		margin-bottom: 0;
+		opacity: .1
+	}
+	20% {
+		opacity: 1
+	}
+	100% {
+		margin-bottom: 640px;
+		opacity: 1;
+		left: 100%
+	}
+}
+@keyframes bubble-v-right {
+	0% {
+		margin-bottom: 0;
+		opacity: .1
+	}
+	20% {
+		opacity: 1
+	}
+	100% {
+		margin-bottom: 640px;
+		opacity: 1;
+		left: 100%
+	}
+}
+@-webkit-keyframes shake-v {
+	0% {
+		margin-left: 0
+	}
+	100% {
+		margin-left: 20px
+	}
+}
+@keyframes shake-v {
+	0% {
+		margin-left: 0
+	}
+	100% {
+		margin-left: 20px
 	}
 }
 

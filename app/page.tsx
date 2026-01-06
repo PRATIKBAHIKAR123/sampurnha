@@ -68,27 +68,58 @@ export default function Home() {
 			
 				{/*  Content Column */}
 				<div className="content-column col-lg-7 col-md-12 col-sm-12">
-					<div className="inner-column">
-						<h1>Get connect to other. <br/> Just ask Topapp</h1>
-						<div className="text">Access to opportunities for career advancement and <br/> professional growth relies heavily on connections.</div>
-						<div className="newsletter-form">
-							<form method="post" action="contact.html">
-								<div className="form-group">
-									<input type="email" name="email" defaultValue="" placeholder="Enter mail address" required/>
-									<button type="submit" className="theme-btn btn-style-two"><span className="txt">Take free trial</span></button>
-								</div>
-							</form>
-						</div>
-						<div className="address">*We will give a trial download link to your mail address</div>
-						{/* Video Box*/}
-						<div className="video-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-							<figure className="video-image">
-								<img src="/images/resource/video.jpg" alt=""/>
-							</figure>
-							<a href="https://www.youtube.com/watch?v=kxPCFljwJws" className="lightbox-image overlay-box"><span className="fa fa-play"><i className="ripple"></i></span></a>
-						</div>
-					</div>
-				</div>
+  <div className="inner-column">
+    <h1>
+      Smart Software Solutions <br /> for Growing Businesses
+    </h1>
+
+    <div className="text">
+      We build powerful ERP, CRM, E-Commerce, POS & HRMS solutions
+      <br />
+      that streamline operations and accelerate business growth.
+    </div>
+
+    <div className="newsletter-form">
+      <form method="post" action="contact.html">
+        <div className="form-group">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your business email"
+            required
+          />
+          <button type="submit" className="theme-btn btn-style-two">
+            <span className="txt">Get Free Consultation</span>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div className="address">
+      *Our team will contact you with a personalized demo & solution roadmap
+    </div>
+
+    {/* Video Box */}
+    <div
+      className="video-box wow fadeInRight"
+      data-wow-delay="0ms"
+      data-wow-duration="1500ms"
+    >
+      <figure className="video-image">
+        <img src="/images/resource/video.jpg" alt="Sampurnha Software Demo" />
+      </figure>
+      <a
+        href="https://www.youtube.com/watch?v=kxPCFljwJws"
+        className="lightbox-image overlay-box"
+      >
+        <span className="fa fa-play">
+          <i className="ripple"></i>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+
 				
 				{/*  Carousel Column */}
 				<div className="carousel-column col-lg-5 col-md-12 col-sm-12">
@@ -115,7 +146,7 @@ export default function Home() {
 									
 										<div className="slide-item">
 											<div className="image">
-												<img src="/images/resource/search.png" alt="" />
+												<img src="/images/resource/slide-3.jpeg" alt="" />
 											</div>
 										</div>
 										
@@ -168,17 +199,25 @@ export default function Home() {
 					<div className="iner-column">
 						<div className="sec-title">
 							<div className="title"><span>Fe</span>atures</div>
-							<h2>Learn the features of new Beautiful <span>lifest</span>y<span>le</span> app!</h2>
+							<h2>Powerful Business Software <br />
+              Built for <span>Efficiency</span> & <span>Growth</span></h2>
 						</div>
 						<div className="text">
-							<p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's stan dard dummy text ever since the 1500s.</p>
-							<p>The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts.</p>
+							<p>
+              Sampurnha Software LLP delivers intelligent, scalable and
+              secure software solutions designed to simplify complex
+              business processes.
+            </p>
+            <p>
+              Our ERP, CRM, E-Commerce, POS and HRMS systems help
+              organizations operate smarter, faster and more efficiently.
+            </p>
 						</div>
 						<ul className="list-style-one">
-							<li>Identfy the most trending sessions & exibitors.</li>
-							<li>24 hours customer supports facilites.</li>
-							<li>Take action to improve your event value.</li>
-						</ul>
+            <li>Custom-built solutions tailored to your business needs</li>
+            <li>Secure, scalable & future-ready architecture</li>
+            <li>Dedicated support & continuous improvements</li>
+          </ul>
 						<a href="#" className="theme-btn btn-style-three"><span className="txt">Contact Us</span></a>
 					</div>
 				</div>
@@ -198,8 +237,11 @@ export default function Home() {
 									<div className="icon-box">
 										<span className="icon flaticon-writing"></span>
 									</div>
-									<h3>Easy to edit</h3>
-									<div className="text">Save time and edit like a pro! Yes! you will be able to edit your application on the easy way.</div>
+									<h3>Centralized Management</h3>
+									<div className="text">
+                  Manage finance, inventory, sales, HR and operations from a
+                  single integrated platform.
+                </div>
 								</div>
 							</div>
 							
@@ -209,8 +251,11 @@ export default function Home() {
 									<div className="icon-box">
 										<span className="icon flaticon-protection-shield-with-a-check-mark"></span>
 									</div>
-									<h3>Full protection</h3>
-									<div className="text">The app needs to be running in the background, as it tracks BLE regions. </div>
+									<h3>Enterprise-Grade Security</h3>
+									<div className="text">
+                  Advanced security standards ensure your data remains
+                  protected, reliable and compliant.
+                </div>
 								</div>
 							</div>
 							
@@ -220,8 +265,11 @@ export default function Home() {
 									<div className="icon-box">
 										<span className="icon flaticon-dashboard"></span>
 									</div>
-									<h3>Hi speedy app</h3>
-									<div className="text">Speedy App provides instant information on thousands of hire and buy products.</div>
+									<h3>Fully Customizable</h3>
+									<div className="text">
+                  Every solution is tailored to your workflows, industry
+                  requirements and business goals.
+                </div>
 								</div>
 							</div>
 							
@@ -231,8 +279,11 @@ export default function Home() {
 									<div className="icon-box">
 										<span className="icon flaticon-writing"></span>
 									</div>
-									<h3>Easy to edit</h3>
-									<div className="text">Save time and edit like a pro! Yes! you will be able to edit your application on the easy way.</div>
+									<h3>Cloud & On-Premise</h3>
+									<div className="text">
+                  Deploy on cloud or on-premise with seamless scalability and
+                  performance.
+                </div>
 								</div>
 							</div>
 							
@@ -299,8 +350,9 @@ export default function Home() {
 						
 							{/*  Sec Title */}
 							<div className="sec-title style-two">
-								<div className="title"><span>St</span>eps</div>
-								<h2>We have some <span> eas</span>y <span>ste</span>p<span>s</span>! </h2>
+								<div className="title"><span>Our</span> Process</div>
+								<h2>Simple Steps to Build <br />
+                <span>Powerful</span> Software Solutions</h2>
 							</div>
 							
 							{/*  Controls*/}
@@ -309,22 +361,25 @@ export default function Home() {
 								<li data-target="#steps-thumb" data-slide-to="0" className="tab-btn active wow" data-wow-delay="0ms" data-wow-duration="1500ms">
 									<span className="number">1</span>
 									<span className="icon"><i className="flaticon-logout"></i></span>
-									<strong>Download as a free trial!</strong>
-									Lorem Ipsum is simply dummy text of the printing setting industry. Lorem Ipsum has been industry's dard dummy text ever since the 1500s.
+									<strong>Requirement Analysis</strong>
+                We understand your business processes, challenges, and goals to
+                design the right ERP, CRM, POS, HRMS or E-Commerce solution.
 								</li>
 								
 								<li data-target="#steps-thumb" data-slide-to="1" className="tab-btn wow" data-wow-delay="0ms" data-wow-duration="1500ms">
 									<span className="number">2</span>
 									<span className="icon"><i className="flaticon-credit-card"></i></span>
-									<strong>Login your account</strong>
-									Lorem Ipsum is simply dummy text of the printing setting industry. Lorem Ipsum has been industry's dard dummy text ever since the 1500s.
+									<strong>Design & Development</strong>
+                Our experts build secure, scalable, and customized software using
+                modern technologies and best practices.
 								</li>
 								
 								<li data-target="#steps-thumb" data-slide-to="2" className="tab-btn wow" data-wow-delay="0ms" data-wow-duration="1500ms">
 									<span className="number">3</span>
 									<span className="icon"><i className="flaticon-gift"></i></span>
-									<strong>Enjoy the app!</strong>
-									Lorem Ipsum is simply dummy text of the printing setting industry. Lorem Ipsum has been industry's dard dummy text ever since the 1500s.
+									<strong>Deployment & Support</strong>
+                We deploy the solution seamlessly and provide continuous support,
+                upgrades, and performance optimization.
 								</li>
 								
 							</ul>
@@ -374,7 +429,7 @@ export default function Home() {
 						<div className="image-column col-lg-6 col-md-12 col-sm-12">
 							<div className="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 								<div className="image titlt" data-tilt data-tilt-max="8">
-									<a href="images/resource/app-1.png" className="app-1 lightbox-image"><img src="/images/resource/dash-board.png" alt="" /></a>
+									<a href="images/resource/app-1.png" className="app-1 lightbox-image"><img src="/images/resource/erp-slide2.png" alt="" /></a>
 								</div>
 							</div>
 						</div>
@@ -385,8 +440,12 @@ export default function Home() {
 								<div className="icon-box">
 									<span className="icon flaticon-settings"></span>
 								</div>
-								<h3>Easy to Manage Your All Data by This App!</h3>
-								<div className="text">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry.</div>
+								<h3>Integrated ERP & CRM Management</h3>
+								<div className="text">
+                Monitor finance, inventory, sales pipeline, customer interactions
+                and branch performance through a single unified system built by
+                Sampurnha Software LLP.
+              </div>
 								<a href="#" className="theme-btn btn-style-two"><span className="txt">Contact team</span></a>
 							</div>
 						</div>
@@ -407,8 +466,11 @@ export default function Home() {
 								<div className="icon-box">
 									<span className="icon flaticon-dashboard"></span>
 								</div>
-								<h3>Bug free responsive app with high performence speed!</h3>
-								<div className="text">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry.</div>
+								<h3>Scalable HRMS, POS & E-Commerce Solutions</h3>
+								<div className="text">Our applications are designed for real businesses with
+                bug-free performance, responsive UI, GST-ready POS billing,
+                automated payroll, attendance, and seamless e-commerce
+                order processing.</div>
 								<a href="#" className="theme-btn btn-style-four"><span className="txt">Read more</span></a>
 							</div>
 						</div>
@@ -417,7 +479,7 @@ export default function Home() {
 						<div className="image-column col-lg-6 col-md-12 col-sm-12">
 							<div className="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
 								<div className="image titlt" data-tilt data-tilt-max="8">
-									<a href="images/resource/app-2.png" className="app-2 lightbox-image"><img src="/images/resource/app-2.png" alt="" /></a>
+									<a href="images/resource/app-2.png" className="app-2 lightbox-image"><img src="/images/resource/Frame 10.png" alt="" /></a>
 								</div>
 								<div className="small-image titlt wow slideInRight" data-wow-delay="300ms" data-wow-duration="1500ms" data-tilt data-tilt-max="15">
 									<a href="images/resource/app-3.png" className="app-2 lightbox-image"><img src="/images/resource/app-3.png" alt="" /></a>
@@ -454,10 +516,20 @@ export default function Home() {
 					<div className="inner-column">
 						<div className="sec-title style-three">
 							<div className="title"><span>Fu</span>nfacts</div>
-							<h2>We have a g<span>reat funfact</span> which <br/> we want to show you!</h2>
+							<h2>
+              Transforming Businesses with <br />
+              Smart Digital Solutions
+            </h2>
 						</div>
-						<div className="text">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's stan dard dummy text ever since the 1500s.</div>
-						<div className="download">Download a trial version to make life easy!</div>
+						<div className="text">
+            For 10+ years, Sampurnha Software LLP has helped organizations
+            automate operations, digitize customer management, and build
+            high-performance sales ecosystems through ERP, CRM, POS,
+            HRMS and E-Commerce platforms.
+          </div>
+						<div className="download">
+            Start your journey with a personalized product demo!
+          </div>
 						<div className="google-btns">
 							<a href="#"><img src="/images/icons/google.png" alt="" /></a>
 							<a href="#"><img src="/images/icons/app.png" alt="" /></a>
@@ -498,7 +570,9 @@ export default function Home() {
 											<div className="count-outer count-box alternate">
 												<span className="count-text" data-speed="3000" data-stop="850">0</span>+
 											</div>
-											<h5 className="counter-title">Agents Team</h5>
+											<h5 className="counter-title">
+                      Satisfied Clients
+                    </h5>
 										</div>
 									</div>
 								</div>
@@ -513,7 +587,7 @@ export default function Home() {
 											<div className="count-outer count-box">
 												<span className="count-text" data-speed="3000" data-stop="154">0</span>+
 											</div>
-											<h5 className="counter-title">Success Mission</h5>
+											<h5 className="counter-title">Implementation Team</h5>
 										</div>
 									</div>
 								</div>
@@ -528,7 +602,7 @@ export default function Home() {
 											<div className="count-outer count-box">
 												<span className="count-text" data-speed="2500" data-stop="1360">0</span>+
 											</div>
-											<h5 className="counter-title">Awards</h5>
+											<h5 className="counter-title">Business Modules Delivered</h5>
 										</div>
 									</div>
 								</div>
@@ -719,15 +793,17 @@ export default function Home() {
 		<div className="auto-container">
 			<div className="sec-title centered style-two">
 				<div className="title"><span>Ap</span>p Screenshots</div>
-				<h2>App screenshots will be <span>im</span>p<span>ortant</span> <br/> to know properly the app! lifestyle app!</h2>
+				<h2>Explore Our ERP, CRM, POS, HRMS <span>Solutions</span>
+        <br />
+        Built for Real Business Workflows</h2>
 			</div>
 			
 			<div className="row appScreenshotCarousel-container swiper-container" style={{ height: "700px" }}>
 				<div className="screen-mobile-image"></div>
 				<div className="swiper-wrapper">
-					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-01.jpg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-02.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-03.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slide-1.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slide-2.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slide-3.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
 					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-04.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
 					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-05.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
 					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-02.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
@@ -756,7 +832,7 @@ export default function Home() {
 		<div className="auto-container">
 			<div className="sec-title centered">
 				<div className="title"><span>In</span>tegrations</div>
-				<h2>We use some plugins to do premium <br/> quality <span>inte</span>g<span>rations</span></h2>
+				<h2>Seamless ERP & CRM Integrations for Powerful Business Automation</h2>
 			</div>
 		</div>
 		
@@ -1055,54 +1131,54 @@ export default function Home() {
 	</section>
 
 	{/*  Faq Section */}
-	<section className="faq-section1">
+	<section className="faq-section">
 		<div className="auto-container">
 			<div className="sec-title centered style-four">
 				<div className="title"><span>FA</span>Q</div>
-				<h2>Learn about new features from <br/> <span>fre</span>q<span>uentl</span>y asked question</h2>
+				<h2>Understand Our ERP, CRM & Business Solutions Through Frequently Asked Questions</h2>
 			</div>
-			<div className="inner-container1">
+			<div className="inner-container">
 				<div className="row clearfix">
 				
 					{/*  Faq Column */}
-					<div className="faq-column1 col-lg-6 col-md-12 col-sm-12">
-						<h3>What should I include in App?</h3>
-						<div className="text">Lorem ipsum dolor sit amet consecte tur adipiscing elit sed <a href="#">eiusmod tempor incididunt</a> ut labore.</div>
+					<div className="faq-column col-lg-6 col-md-12 col-sm-12">
+						<h3>How does your ERP software help my business?</h3>
+						<div className="text">Our ERP solution centralizes accounting, inventory, sales, purchasing, GST, and reporting into one real-time platform. It reduces manual work, improves accuracy, and gives management a clear dashboard for faster decision-making.</div>
 					</div>
 					
 					{/*  Faq Column */}
-					<div className="faq-column1 col-lg-6 col-md-12 col-sm-12">
-						<h3>Can users choose to install the app?</h3>
-						<div className="text">We’re a company built on open source. It all began with Ionic Framework - the world's most popular open source for building cross-platform mobile and Progressive Web Apps.</div>
+					<div className="faq-column col-lg-6 col-md-12 col-sm-12">
+						<h3>Can you customize CRM as per our workflow?</h3>
+						<div className="text">Yes. We design CRM modules tailored for lead tracking, quotations, service tickets, and customer communication. The system adapts to your sales process instead of forcing you to change how you work.</div>
 					</div>
 					
 					{/*  Faq Column */}
-					<div className="faq-column1 col-lg-6 col-md-12 col-sm-12">
-						<h3>How does the Moodle app work?</h3>
-						<div className="text">The apps you build with Ionic leverage the power and stability of the open web - the most time-tested universal runtime in the world. The web has been around over two decades.</div>
+					<div className="faq-column col-lg-6 col-md-12 col-sm-12">
+						<h3>Does the E-Commerce platform integrate with ERP & POS?</h3>
+						<div className="text">Absolutely. Orders from your online store sync directly with ERP inventory and POS billing. This ensures stock accuracy, automated invoices, and smooth payment gateway connectivity such as Stripe, PayPal, and Indian gateways.</div>
 					</div>
 					
 					{/*  Faq Column */}
-					<div className="faq-column1 col-lg-6 col-md-12 col-sm-12">
-						<h3>How do I disable installed apps?</h3>
-						<div className="text">Lorem ipsum dolor sit amet consecte tur adipiscing elit sed do eiusmod tempor incididunt ut labore.</div>
+					<div className="faq-column col-lg-6 col-md-12 col-sm-12">
+						<h3>What POS solutions do you provide?</h3>
+						<div className="text">We develop POS applications for retail and restaurants with barcode devices, receipt printers, cash ledgers, and GST billing. The POS connects with ERP and CRM for unified sales and customer data.</div>
 					</div>
 					
 					{/*  Faq Column */}
-					<div className="faq-column1 col-lg-6 col-md-12 col-sm-12">
-						<h3>Does disabling apps free up space?</h3>
-						<div className="text">Lorem ipsum dolor sit amet consecte tur adipiscing elit sed <a href="#">eiusmod tempor incididunt</a> ut labore.</div>
+					<div className="faq-column col-lg-6 col-md-12 col-sm-12">
+						<h3>How does HRMS & payroll automation work?</h3>
+						<div className="text">Our HRMS manages employee records, attendance, leave, salary structures, and payroll processing. Biometric or mobile attendance can be integrated to generate payslips and statutory reports automatically.</div>
 					</div>
 					
 					{/*  Faq Column */}
-					<div className="faq-column1 col-lg-6 col-md-12 col-sm-12">
-						<h3>Why are mobile apps important?</h3>
-						<div className="text">Lorem ipsum dolor sit amet consecte tur adipiscing elit sed do <a href="#">eiusmod tempor incididunt</a> ut labore.</div>
+					<div className="faq-column col-lg-6 col-md-12 col-sm-12">
+						<h3>Which technologies do you use for development?</h3>
+						<div className="text">We primarily use Flutter for Android & Web PWA, .NET Core for APIs, and Firebase for cloud data and push notifications. This stack provides security, scalability, and high performance for enterprise applications.</div>
 					</div>
 					
 				</div>
 				{/*  Question */}
-				<div className="question">Still have a question? <a href="#">Contact us:</a> <strong>topapp@info.com</strong></div>
+				<div className="question">Still have a question? Contact us: <strong><a href="mailto:hatim@sampurnha.com">hatim@sampurnha.com</a></strong></div>
 				
 			</div>
 		</div>
@@ -1116,10 +1192,11 @@ export default function Home() {
 				<div className="clearfix">
 					<div className="pull-left">
 						<div className="title"><span>Bl</span>og</div>
-						<h2>We want to <span>share our</span> succes <br/> by our latest blog.</h2>
+						<h2>We want to <span>share our</span> success
+by our latest blog</h2>
 					</div>
 					<div className="pull-right">
-						<div className="text">Lorem Ipsum is simply dummy text of the printing and type <br/> setting industry. Lorem Ipsum has been the industry's stan <br/> dard dummy text ever since the 1500s.</div>
+						<div className="text">Explore practical knowledge on ERP software development,<br/> CRM automation, E-Commerce integration, POS transformation, and HRMS digitalization.<br/> Our blogs reflect real project experience, Indian business compliance, GST workflows, and scalable technology architecture built by Sampurnha Software LLP.</div>
 					</div>
 				</div>
 			</div>
@@ -1136,8 +1213,8 @@ export default function Home() {
 								<li><span className="icon icons-calendar-2"></span>September 12, 2020</li>
 								<li><span className="icon icons-user-4"></span>Admin</li>
 							</ul>
-							<h3><a href="#">Organisationaly teams are just like families.</a></h3>
-							<div className="text">Lorem Ipsum is simply dummy text the printing and setting industry. Lorm Ipsum has been the industry's stanard dummy text ever.</div>
+							<h3><a href="#">ERP Software: The Digital Backbone of Modern Businesses</a></h3>
+							<div className="text">In today’s competitive market, businesses can no longer rely on scattered spreadsheets and manual registers. An Enterprise Resource Planning (ERP) system acts as a single source of truth that connects all departments—accounts, inventory, sales, purchase, production, and GST compliance.</div>
 						</div>
 					</div>
 				</div>
@@ -1153,8 +1230,8 @@ export default function Home() {
 								<li><span className="icon icons-calendar-2"></span>September 12, 2020</li>
 								<li><span className="icon icons-user-4"></span>Admin</li>
 							</ul>
-							<h3><a href="#">Revitalising your people in a retail downturn...</a></h3>
-							<div className="text">Lorem Ipsum is simply dummy text the printing and setting industry. Lorm Ipsum has been the industry's stanard dummy text ever.</div>
+							<h3><a href="#">Why CRM Is Not Just for Big Companies</a></h3>
+							<div className="text">Customer Relationship Management (CRM) is often misunderstood as a tool only for large corporates. The reality is that small teams need CRM even more because every lead and follow-up matters.</div>
 						</div>
 					</div>
 				</div>
@@ -1170,8 +1247,8 @@ export default function Home() {
 								<li><span className="icon icons-calendar-2"></span>September 12, 2020</li>
 								<li><span className="icon icons-user-4"></span>Admin</li>
 							</ul>
-							<h3><a href="#">Regional Managers time management.</a></h3>
-							<div className="text">Lorem Ipsum is simply dummy text the printing and setting industry. Lorm Ipsum has been the industry's stanard dummy text ever.</div>
+							<h3><a href="#">Connecting E-Commerce, POS & HRMS Into One Ecosystem</a></h3>
+							<div className="text">Businesses today operate through multiple channels—online stores, retail counters, and field staff. If these systems don’t talk to each other, growth creates confusion instead of profit.</div>
 						</div>
 					</div>
 				</div>
@@ -1195,19 +1272,22 @@ export default function Home() {
 							<li>
 								<span className="icon flaticon-address"></span>
 								<strong>Our head office address:</strong>
-								3556 Hartford Way Vlg, Mount Pleasant, SC, <br/> 29466, Australia.
+								Sr. No. 14, Shop No. 02, 
+								<br/>
+Near Dhadge IND, Nanded, 
+Pune, Haveli, Maharashtra, 
+India, 411041 <br/>
 							</li>
 							<li>
 								<span className="icon flaticon-telephone"></span>
 								<strong>Call for help:</strong>
-								<a href="tel:734-697-2907">(734) 697-2907</a><br/>
-								<a href="tel:843-971-1906">(843) 971-1906</a>
+								<a href="tel:+91 75072 78652">+91 75072 78652</a><br/>
+								{/* <a href="tel:843-971-1906">(843) 971-1906</a> */}
 							</li>
 							<li>
 								<span className="icon flaticon-invite"></span>
 								<strong>Mail us:</strong>
-								<a className="mailto:noreply@envato.com" href="#">noreply@envato.com</a><br/>
-								<a className="mailto:noreply@envato.com" href="#">noreply@topapp.com</a>
+								<a className="mailto:hatim@sampurnha.com" href="#">hatim@sampurnha.com</a><br/>
 							</li>
 						</ul>
 					</div>
