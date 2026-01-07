@@ -320,7 +320,7 @@ export default function Home() {
 								<div className="carousel-item active">
 									<div className="content">
 										<div className="image">
-											<a href="images/resource/mokeup-1.jpg" data-fancybox="steps" data-caption="" className="image-link lightbox-image"><img src="/images/resource/mokeup-1.jpg" alt="" /></a>
+											<a href="/images/resource/slide-2.jpeg" data-fancybox="steps" data-caption="" className="image-link lightbox-image"><img src="/images/resource/slide-2.jpeg" alt="" /></a>
 										</div>
 									</div>
 								</div>
@@ -328,7 +328,7 @@ export default function Home() {
 								<div className="carousel-item">
 									<div className="content">
 										<div className="image">
-											<a href="images/resource/mokeup-2.jpg" data-fancybox="steps" data-caption="" className="image-link lightbox-image"><img src="/images/resource/mokeup-2.jpg" alt="" /></a>
+											<a href="/images/resource/slide-3.jpeg" data-fancybox="steps" data-caption="" className="image-link lightbox-image"><img src="/images/resource/slide-3.jpeg" alt="" /></a>
 										</div>
 									</div>
 								</div>
@@ -336,7 +336,7 @@ export default function Home() {
 								<div className="carousel-item">
 									<div className="content">
 										<div className="image">
-											<a href="images/resource/mokeup-3.jpg" data-fancybox="steps" data-caption="" className="image-link lightbox-image"><img src="/images/resource/mokeup-3.jpg" alt="" /></a>
+											<a href="/images/resource/slide-9.jpeg" data-fancybox="steps" data-caption="" className="image-link lightbox-image"><img src="/images/resource/slide-9.jpeg" alt="" /></a>
 										</div>
 									</div>
 								</div>
@@ -429,7 +429,7 @@ export default function Home() {
 						<div className="image-column col-lg-6 col-md-12 col-sm-12">
 							<div className="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 								<div className="image titlt" data-tilt data-tilt-max="8">
-									<a href="images/resource/app-1.png" className="app-1 lightbox-image"><img src="/images/resource/erp-slide2.png" alt="" /></a>
+									<a href="images/resource/app-1.png" className="app-1 lightbox-image"><img src="/images/resource/erp-slide1.png" alt="" /></a>
 								</div>
 							</div>
 						</div>
@@ -617,175 +617,6 @@ export default function Home() {
 		</div>
 	</section>
 
-{/*  Testimonials Section */}
-	<section className="testimonials-thumbs-carousel">
-		<div className="auto-container">
-			
-			{/*  Carousel Wrapper */}
-			<div id="carousel-thumb" className="carousel slide carousel-thumbnails" data-ride="carousel">
-				<div className="row clearfix">
-				
-					<div className="pagers-column col-lg-6 col-md-12 col-sm-12">
-						<div className="pattern-layer" style={{backgroundImage: "url(images/background/pattern-9.png)"}}></div>
-						{/*  Controls*/}
-						<ol className="carousel-indicators">
-							<li data-target="#carousel-thumb" data-slide-to="0" className="active"> <div className="image img-circle"><img src="/images/resource/author-thumb-1.jpg" alt="" /></div></li>
-							<li data-target="#carousel-thumb" data-slide-to="1"><div className="image img-circle"><img src="/images/resource/author-thumb-2.jpg" alt="" /></div></li>
-							<li data-target="#carousel-thumb" data-slide-to="2"><div className="image img-circle"><img src="/images/resource/author-thumb-3.jpg" alt="" /></div></li>
-							<li data-target="#carousel-thumb" data-slide-to="3"><div className="image img-circle"><img src="/images/resource/author-thumb-4.jpg" alt="" /></div></li>
-							<li data-target="#carousel-thumb" data-slide-to="4"><div className="image img-circle"><img src="/images/resource/author-thumb-5.jpg" alt="" /></div></li>
-							<li data-target="#carousel-thumb" data-slide-to="5"><div className="image img-circle"><img src="/images/resource/author-thumb-6.jpg" alt="" /></div></li>
-							<li data-target="#carousel-thumb" data-slide-to="6"><div className="image img-circle"><img src="/images/resource/author-thumb-7.jpg" alt="" /></div></li>
-						</ol>
-					</div>
-				
-					<div className="carousel-column col-lg-6 col-md-12 col-sm-12">
-						<div className="sec-title style-four">
-							<div className="title"><span>Te</span>stimonials</div>
-							<h2>Clients choice us because our app<span>lication is the best!</span></h2>
-						</div>
-						{/*  Slides */}
-						<div className="carousel-inner" role="listbox">
-						
-							<div className="carousel-item active">
-								<div className="testimonial-block">
-									<div className="inner-box">
-										<div className="author-image">
-											<span className="social-icon fa fa-facebook-square"></span>
-											<img src="/images/resource/author-thumb-1.jpg" alt="" />
-										</div>
-										<div className="quote-icon icons-right-quote-sign"></div>
-										<div className="slide-text">“ Lorem Ipsum is simply dummy text of the printing and type <br/> setting industry. Lorem Ipsum has been the industry's stan  <br/> dard dummy text ever since. ”</div>
-										<div className="slide-info">
-											<h4 className="author-title">Kathleen Smith</h4>
-											<div className="designation">Senior Director</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div className="carousel-item">
-								<div className="testimonial-block">
-									<div className="inner-box">
-										<div className="author-image">
-											<span className="social-icon fa fa-facebook-square"></span>
-											<img src="/images/resource/author-thumb-2.jpg" alt="" />
-										</div>
-										<div className="quote-icon icons-right-quote-sign"></div>
-										<div className="slide-text">“ Lorem Ipsum is simply dummy text of the printing and type <br/> setting industry. Lorem Ipsum has been the industry's stan  <br/> dard dummy text ever since. ”</div>
-										<div className="slide-info">
-											<h4 className="author-title">Kathleen Smith</h4>
-											<div className="designation">Senior Director</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div className="carousel-item">
-								<div className="testimonial-block">
-									<div className="inner-box">
-										<div className="author-image">
-											<span className="social-icon fa fa-facebook-square"></span>
-											<img src="/images/resource/author-thumb-3.jpg" alt="" />
-										</div>
-										<div className="quote-icon icons-right-quote-sign"></div>
-										<div className="slide-text">“ Lorem Ipsum is simply dummy text of the printing and type <br/> setting industry. Lorem Ipsum has been the industry's stan  <br/> dard dummy text ever since. ”</div>
-										<div className="slide-info">
-											<h4 className="author-title">Kathleen Smith</h4>
-											<div className="designation">Senior Director</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div className="carousel-item">
-								<div className="testimonial-block">
-									<div className="inner-box">
-										<div className="author-image">
-											<span className="social-icon fa fa-facebook-square"></span>
-											<img src="/images/resource/author-thumb-4.jpg" alt="" />
-										</div>
-										<div className="quote-icon icons-right-quote-sign"></div>
-										<div className="slide-text">“ Lorem Ipsum is simply dummy text of the printing and type <br/> setting industry. Lorem Ipsum has been the industry's stan  <br/> dard dummy text ever since. ”</div>
-										<div className="slide-info">
-											<h4 className="author-title">Kathleen Smith</h4>
-											<div className="designation">Senior Director</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div className="carousel-item">
-								<div className="testimonial-block">
-									<div className="inner-box">
-										<div className="author-image">
-											<span className="social-icon fa fa-facebook-square"></span>
-											<img src="/images/resource/author-thumb-5.jpg" alt="" />
-										</div>
-										<div className="quote-icon icons-right-quote-sign"></div>
-										<div className="slide-text">“ Lorem Ipsum is simply dummy text of the printing and type <br/> setting industry. Lorem Ipsum has been the industry's stan  <br/> dard dummy text ever since. ”</div>
-										<div className="slide-info">
-											<h4 className="author-title">Kathleen Smith</h4>
-											<div className="designation">Senior Director</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div className="carousel-item">
-								<div className="testimonial-block">
-									<div className="inner-box">
-										<div className="author-image">
-											<span className="social-icon fa fa-facebook-square"></span>
-											<img src="/images/resource/author-thumb-6.jpg" alt="" />
-										</div>
-										<div className="quote-icon icons-right-quote-sign"></div>
-										<div className="slide-text">“ Lorem Ipsum is simply dummy text of the printing and type <br/> setting industry. Lorem Ipsum has been the industry's stan  <br/> dard dummy text ever since. ”</div>
-										<div className="slide-info">
-											<h4 className="author-title">Kathleen Smith</h4>
-											<div className="designation">Senior Director</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div className="carousel-item">
-								<div className="testimonial-block">
-									<div className="inner-box">
-										<div className="author-image">
-											<span className="social-icon fa fa-facebook-square"></span>
-											<img src="/images/resource/author-thumb-7.jpg" alt="" />
-										</div>
-										<div className="quote-icon icons-right-quote-sign"></div>
-										<div className="slide-text">“ Lorem Ipsum is simply dummy text of the printing and type <br/> setting industry. Lorem Ipsum has been the industry's stan  <br/> dard dummy text ever since. ”</div>
-										<div className="slide-info">
-											<h4 className="author-title">Kathleen Smith</h4>
-											<div className="designation">Senior Director</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-						{/*  Slides */}
-						
-						{/*  Controls */}
-						<a className="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
-							<span className="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span className="sr-only">Previous</span>
-						</a>
-						<a className="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
-							<span className="carousel-control-next-icon" aria-hidden="true"></span>
-							<span className="sr-only">Next</span>
-						</a>
-						
-					</div>
-					
-				</div>
-			</div>
-			    
-        </div>
-    </section>
 	
 
   {/*  Screenshots Section */}
@@ -804,14 +635,14 @@ export default function Home() {
 					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slide-1.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
 					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slide-2.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
 					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slide-3.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-04.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-05.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-02.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-01.jpg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-02.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-03.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-04.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
-					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slider-05.png)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slide-4.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slide-5.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slide-6.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slide-7.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slide-8.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slide-9.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slide-10.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+					<div className="swiper-slide" style={{backgroundImage: "url(/images/resource/slide-11.jpeg)", backgroundSize: "cover", backgroundPosition: "center"}}></div>
 				</div>
 				{/*  Add Arrows */}
 			</div>
@@ -842,8 +673,8 @@ export default function Home() {
 			<div className="bubbles-wrapper">
 				<div className="animations m-0">
 					<div className="bubble bg-contrast rounded-circle p-2 shadow icon icon-md">
-						<img src="/images/resource/Integrations-1.jpg" alt="" className="img-responsive" />
-						<span className="badge badge-contrast shadow-box">HTML-5</span>
+						<img src="/images/resource/Integrations-1.png" alt="" className="img-responsive" />
+						<span className="badge badge-contrast shadow-box">ERP</span>
 					</div>
 					<div className="bubble bg-contrast rounded-circle p-2 shadow icon icon-xxl">
 						<img src="/images/resource/Integrations-2.jpg" alt="" className="img-responsive" />
@@ -1374,10 +1205,11 @@ India, 411041 <br/>
 							<div className="logo">
 								<a href="#"><img src="/images/SAMPURNHA SOFTWARE.png" alt="" title=""/></a>
 							</div>
-							<div className="text">Lorem Ipsum is simply dummy text <br/> of the printing and type.</div>
-							<div className="paypall">
+							<div className="text">We build powerful ERP, CRM, E-Commerce, POS & HRMS solutions
+that streamline operations and accelerate business growth.</div>
+							{/* <div className="paypall">
 								<a href="#"><img src="/images/icons/paypall.png" alt="" /></a>
-							</div>
+							</div> */}
 						</div>
 					</div>
 							
@@ -1439,15 +1271,15 @@ India, 411041 <br/>
 			<div className="footer-bottom">
 				<div className="clearfix">
 					<div className="pull-left">
-						<div className="copyright">&copy; 2020 Themexriver</div>
+						<div className="copyright">&copy; 2026 Sampurnha Software LLP</div>
 					</div>
-					<div className="pull-right">
+					{/* <div className="pull-right">
 						<ul className="footer-nav">
 							<li><a href="#">Help</a></li>
 							<li><a href="#">Terms & Conditions</a></li>
 							<li><a href="#">Privacy</a></li>
 						</ul>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		
