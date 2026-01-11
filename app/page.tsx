@@ -4,6 +4,12 @@
 import { useEffect, useRef } from "react";
 import Script from "next/script";
 import Header from "./components/header";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+
 
 export default function Home() {
   const swiperInitialized = useRef(false);
@@ -47,6 +53,133 @@ export default function Home() {
   useEffect(() => {
     initSwiper();
   }, []);
+
+  const latestWorksData = [
+  {
+    id: 1,
+    image: "/images/resource/erp-slide.png",
+    title: "ERP Software Solution",
+    category: "Enterprise Management",
+  },
+  {
+    id: 2,
+    image: "/images/resource/erp-slide1.png",
+    title: "CRM Management System",
+    category: "Customer Relationship",
+  },
+  {
+    id: 3,
+    image: "/images/resource/erp-slide2.png",
+    title: "E-Commerce Platform",
+    category: "Online Business",
+  },
+  {
+    id: 4,
+    image: "/images/resource/Frame 10.png",
+    title: "E-Commerce Platform",
+    category: "Online Business",
+  },
+];
+
+const pricingPlans = [
+  {
+    id: "gold",
+    title: "Gold",
+    subtitle: "Perfect for New Businesses",
+    price: "₹ 5,400",
+    gst: "* GST Exclusive",
+    users: "1 User",
+    gstin: "1 GSTIN",
+    invoices: "5,000 Invoices",
+    platform: "Web or App",
+    features: [
+      "Dashboard",
+      "Account Master",
+      "Items",
+      "Company",
+      "HSN",
+      "Manufacturer Name",
+      "Opening Balance",
+      "Sale Bill",
+      "Purchase Bill",
+    ],
+  },
+  {
+    id: "diamond",
+    title: "Diamond",
+    subtitle: "Complete Control Over Your Inventory",
+    price: "₹ 8,100",
+    gst: "* GST Exclusive",
+    users: "1 User",
+    gstin: "1 GSTIN",
+    invoices: "12,000 Invoices",
+    platform: "Web & App",
+    features: [
+      "Unit",
+      "Rate Master",
+      "Discount Master",
+      "Quotation",
+      "Stock Issue",
+      "Order",
+      "Sales Return",
+    ],
+  },
+  {
+    id: "platinum",
+    title: "Platinum",
+    subtitle: "Full Control Over Business Operations",
+    price: "₹ 15,300",
+    gst: "* GST Exclusive",
+    users: "2 Users",
+    gstin: "1 GSTIN",
+    invoices: "30,000 Invoices",
+    platform: "Web & App",
+    popular: true,
+    features: [
+      "Store",
+      "PDC Cheques Payment",
+      "PD Cheque / Cash",
+      "Banking Reconciliation",
+      "E-Invoice",
+      "GSTR 2A Reconciliation",
+    ],
+  },
+  {
+    id: "platinumPlus",
+    title: "Platinum Plus",
+    subtitle: "Unlock Powerful Advanced Features",
+    price: "₹ 29,700",
+    gst: "* GST Exclusive",
+    users: "2 Users",
+    gstin: "2 GSTIN",
+    invoices: "1 Lakh Invoices",
+    platform: "Web & App",
+    features: [
+      "Store",
+      "PDC Cheques Payment",
+      "PD Cheque / Cash",
+      "Banking Reconciliation",
+      "E-Invoice",
+      "GSTR 2A Reconciliation",
+    ],
+  },
+  {
+    id: "enterprise",
+    title: "Enterprise",
+    subtitle: "Customized Solutions For Enterprises",
+    price: "Contact Us",
+    features: [
+      "Head Office",
+      "Ware House",
+      "Multi Branch",
+      "Dashboard",
+      "Master",
+      "Inventory Master",
+      "Store",
+    ],
+  },
+];
+
 
   return (
     <>
@@ -731,235 +864,120 @@ export default function Home() {
 		
 	</section>
 
-	{/*  Pricing Section */}
-	<section className="pricing-section" id="pricing">
-		<div className="auto-container">
-			<div className="sec-title centered style-three">
-				<div className="title"><span>pr</span>icing</div>
-				<h2>We have offered the <span>best </span>p<span>ricing</span> <br/> to make life easier!</h2>
+
+
+	{/*  Latest Works Gallery Section */}
+<section className="latest-works-gallery-section">
+  <div className="auto-container">
+    <div className="sec-title centered style-three">
+      <div className="title">
+        <span>La</span>test Works
+      </div>
+      <h2>
+        Our Recent <span>Projects</span> to Deliver <br />
+        Best Solutions
+      </h2>
+    </div>
+
+    <Swiper
+      modules={[Navigation, Pagination, Autoplay]}
+      spaceBetween={30}
+      slidesPerView={3}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      pagination={{ clickable: true }}
+      loop
+      breakpoints={{
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 12,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      }}
+      className="latest-works-carousel"
+    >
+      {latestWorksData.map((item) => (
+        <SwiperSlide key={item.id}>
+          <div className="work-card">
+            <div className="work-image">
+              <img src={item.image} alt={item.title} />
+            </div>
+
+            <div className="work-content">
+              <h4>{item.title}</h4>
+              <span>{item.category}</span>
+            </div>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
+</section>
+
+
+
+{/* <section className="pricing-section">
+	<div className="sec-title centered style-two">
+				<div className="title">Pricing Plans</div>
+				<h2>Explore Our ERP, CRM, POS, HRMS <span>Pricing</span></h2>
 			</div>
-			
-			<div className="pricing-tabs tabs-box">
-                    
-				{/*  Title Column */}
-				<div className="title-column">
-					
-					{/*  Tab Btns */}
-					<ul className="tab-buttons clearfix">
-						<li data-tab="#prod-monthly" className="tab-btn monthly active-btn">Monthly</li>
-						<li className="boll"><span className="round"></span></li>
-						<li data-tab="#prod-yearly" className="tab-btn yearly">Yearly</li>
-					</ul>						
-					
-				</div>
-				
-				{/* Tabs Container*/}
-				<div className="tabs-content">
-					
-					<div className="patern-layer-three paroller" data-paroller-factor="0.30" data-paroller-factor-lg="0.60" data-paroller-type="foreground" data-paroller-direction="horizontal" style={{backgroundImage: "url(images/icons/pattern-19.png)"}}></div>
-					<div className="patern-layer-four paroller" data-paroller-factor="-0.30" data-paroller-factor-lg="0.60" data-paroller-type="foreground" data-paroller-direction="horizontal" style={{backgroundImage: "url(images/icons/pattern-20.png)"}}></div>
-					
-					{/* Tab*/}
-					<div className="tab active-tab" id="prod-monthly">
-						<div className="content">
-							<div className="row clearfix">
-								
-								{/*  Price Block */}
-								<div className="price-block col-lg-4 col-md-6 col-sm-12">
-									<div className="inner-box">
-										<div className="patern-layer-two" style={{backgroundImage: "url(images/icons/pattern-18.png)"}}></div>
-										<div className="patern-layer-one" style={{backgroundImage: "url(images/icons/pattern-17.png)"}}></div>
-										<div className="upper-box">
-											<div className="icon-box">
-												<span className="icon flaticon-paper-plane"></span>
-											</div>
-											<div className="title">Premeum</div>
-											<h3>$39.99</h3>
-										</div>
-										<div className="middle-box">
-											<div className="price-title">unLimited access</div>
-											<ul className="price-list">
-												<li><i className="fa fa-remove"></i>100 MB Disk Space</li>
-												<li><i className="fa fa-check"></i>2 Subdo mains dolor</li>
-												<li><i className="fa fa-remove"></i>5 Email Accounts</li>
-												<li><i className="fa fa-remove"></i>No License</li>
-												<li><i className="fa fa-check"></i>Phone & Mail Support</li>
-											</ul>
-										</div>
-										<div className="lower-box">
-											<a href="#" className="theme-btn plan-btn">choose plan</a>
-											<a href="#" className="trial">Get a free trial now!</a>
-										</div>
-									</div>
-								</div>
-								
-								{/*  Price Block */}
-								<div className="price-block col-lg-4 col-md-6 col-sm-12">
-									<div className="inner-box">
-										<div className="patern-layer-two" style={{backgroundImage: "url(images/icons/pattern-18.png)"}}></div>
-										<div className="patern-layer-one" style={{backgroundImage: "url(images/icons/pattern-17.png)"}}></div>
-										<div className="upper-box">
-											<div className="icon-box">
-												<span className="icon flaticon-plane"></span>
-											</div>
-											<div className="title">Standrad</div>
-											<h3>$59.99</h3>
-										</div>
-										<div className="middle-box">
-											<div className="price-title">Limited access</div>
-											<ul className="price-list">
-												<li><i className="fa fa-remove"></i>100 MB Disk Space</li>
-												<li><i className="fa fa-check"></i>2 Subdo mains dolor</li>
-												<li><i className="fa fa-remove"></i>5 Email Accounts</li>
-												<li><i className="fa fa-remove"></i>No License</li>
-												<li><i className="fa fa-check"></i>Phone & Mail Support</li>
-											</ul>
-										</div>
-										<div className="lower-box">
-											<a href="#" className="theme-btn plan-btn">choose plan</a>
-											<a href="#" className="trial">Get a free trial now!</a>
-										</div>
-									</div>
-								</div>
-								
-								{/*  Price Block */}
-								<div className="price-block col-lg-4 col-md-6 col-sm-12">
-									<div className="inner-box">
-										<div className="patern-layer-two" style={{backgroundImage: "url(images/icons/pattern-18.png)"}}></div>
-										<div className="patern-layer-one" style={{backgroundImage: "url(images/icons/pattern-17.png)"}}></div>
-										<div className="upper-box">
-											<div className="icon-box">
-												<span className="icon icons-rocket-ship"></span>
-											</div>
-											<div className="title">Premeum</div>
-											<h3>$89.99</h3>
-										</div>
-										<div className="middle-box">
-											<div className="price-title">unLimited access</div>
-											<ul className="price-list">
-												<li><i className="fa fa-remove"></i>100 MB Disk Space</li>
-												<li><i className="fa fa-check"></i>2 Subdo mains dolor</li>
-												<li><i className="fa fa-remove"></i>5 Email Accounts</li>
-												<li><i className="fa fa-remove"></i>No License</li>
-												<li><i className="fa fa-check"></i>Phone & Mail Support</li>
-											</ul>
-										</div>
-										<div className="lower-box">
-											<a href="#" className="theme-btn plan-btn">choose plan</a>
-											<a href="#" className="trial">Get a free trial now!</a>
-										</div>
-									</div>
-								</div>
-								
-							</div>
-							
-							{/*  Guarantee */}
-							<div className="guarantee"><span className="circle"></span>30 days money back guarantee!</div>
-						
-						</div>
-					</div>
-					
-					{/* Tab*/}
-					<div className="tab" id="prod-yearly">
-						<div className="content">
-							<div className="row clearfix">
-							
-								{/*  Price Block */}
-								<div className="price-block col-lg-4 col-md-6 col-sm-12">
-									<div className="inner-box">
-										<div className="patern-layer-two" style={{backgroundImage: "url(images/icons/pattern-18.png)"}}></div>
-										<div className="patern-layer-one" style={{backgroundImage: "url(images/icons/pattern-17.png)"}}></div>
-										<div className="upper-box">
-											<div className="icon-box">
-												<span className="icon flaticon-paper-plane"></span>
-											</div>
-											<div className="title">Premeum</div>
-											<h3>$99.99</h3>
-										</div>
-										<div className="middle-box">
-											<div className="price-title">unLimited access</div>
-											<ul className="price-list">
-												<li><i className="fa fa-remove"></i>100 MB Disk Space</li>
-												<li><i className="fa fa-check"></i>2 Subdo mains dolor</li>
-												<li><i className="fa fa-remove"></i>5 Email Accounts</li>
-												<li><i className="fa fa-remove"></i>No License</li>
-												<li><i className="fa fa-check"></i>Phone & Mail Support</li>
-											</ul>
-										</div>
-										<div className="lower-box">
-											<a href="#" className="theme-btn plan-btn">choose plan</a>
-											<a href="#" className="trial">Get a free trial now!</a>
-										</div>
-									</div>
-								</div>
-								
-								{/*  Price Block */}
-								<div className="price-block col-lg-4 col-md-6 col-sm-12">
-									<div className="inner-box">
-										<div className="patern-layer-two" style={{backgroundImage: "url(images/icons/pattern-18.png)"}}></div>
-										<div className="patern-layer-one" style={{backgroundImage: "url(images/icons/pattern-17.png)"}}></div>
-										<div className="upper-box">
-											<div className="icon-box">
-												<span className="icon flaticon-plane"></span>
-											</div>
-											<div className="title">Standrad</div>
-											<h3>$149.99</h3>
-										</div>
-										<div className="middle-box">
-											<div className="price-title">Limited access</div>
-											<ul className="price-list">
-												<li><i className="fa fa-remove"></i>100 MB Disk Space</li>
-												<li><i className="fa fa-check"></i>2 Subdo mains dolor</li>
-												<li><i className="fa fa-remove"></i>5 Email Accounts</li>
-												<li><i className="fa fa-remove"></i>No License</li>
-												<li><i className="fa fa-check"></i>Phone & Mail Support</li>
-											</ul>
-										</div>
-										<div className="lower-box">
-											<a href="#" className="theme-btn plan-btn">choose plan</a>
-											<a href="#" className="trial">Get a free trial now!</a>
-										</div>
-									</div>
-								</div>
-								
-								{/*  Price Block */}
-								<div className="price-block col-lg-4 col-md-6 col-sm-12">
-									<div className="inner-box">
-										<div className="patern-layer-two" style={{backgroundImage: "url(images/icons/pattern-18.png)"}}></div>
-										<div className="patern-layer-one" style={{backgroundImage: "url(images/icons/pattern-17.png)"}}></div>
-										<div className="upper-box">
-											<div className="icon-box">
-												<span className="icon icons-rocket-ship"></span>
-											</div>
-											<div className="title">Premeum</div>
-											<h3>$199.99</h3>
-										</div>
-										<div className="middle-box">
-											<div className="price-title">unLimited access</div>
-											<ul className="price-list">
-												<li><i className="fa fa-remove"></i>100 MB Disk Space</li>
-												<li><i className="fa fa-check"></i>2 Subdo mains dolor</li>
-												<li><i className="fa fa-remove"></i>5 Email Accounts</li>
-												<li><i className="fa fa-remove"></i>No License</li>
-												<li><i className="fa fa-check"></i>Phone & Mail Support</li>
-											</ul>
-										</div>
-										<div className="lower-box">
-											<a href="#" className="theme-btn plan-btn">choose plan</a>
-											<a href="#" className="trial">Get a free trial now!</a>
-										</div>
-									</div>
-								</div>
-							
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-			
-		</div>
-	</section>
+  <div className="pricing-header">
+    <select className="country-select">
+      <option>India</option>
+	  <option>UAE</option>
+	  <option>QATAR</option>
+    </select>
+
+    <div className="duration-tabs">
+      <button className="active">1 Year</button>
+      <button>3 Years</button>
+      <button>5 Years</button>
+    </div>
+  </div>
+
+  <div className="pricing-grid">
+    {pricingPlans.map((plan) => (
+      <div className={`pricing-card ${plan.popular ? "popular" : ""}`} key={plan.id}>
+        {plan.popular && <span className="popular-badge">Most Popular</span>}
+
+        <h3>{plan.title}</h3>
+        <p className="subtitle">{plan.subtitle}</p>
+
+        <h2 className="price">{plan.price}</h2>
+        <small>{plan.gst}</small>
+
+        <button className="trial-btn">Start Free Trial </button>
+
+        {plan.users && (
+          <div className="mini-features">
+            <span>{plan.users}</span>
+            <span>{plan.gstin}</span>
+            <span>{plan.invoices}</span>
+            <span>{plan.platform}</span>
+          </div>
+        )}
+
+        <h5>INCLUDES</h5>
+
+        <ul className="feature-list">
+          {plan.features.map((f:any, i:any) => (
+            <li key={i}>✔ {f}</li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section> */}
+
 
 	{/*  Faq Section */}
 	<section className="faq-section">
