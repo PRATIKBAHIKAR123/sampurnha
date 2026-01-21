@@ -54,6 +54,53 @@ export default function Home() {
     initSwiper();
   }, []);
 
+  // Counter Animation Effect
+  useEffect(() => {
+    const countBoxes = document.querySelectorAll('.count-box');
+    const animated = new Set();
+
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !animated.has(entry.target)) {
+          animated.add(entry.target);
+          
+          const countText = entry.target.querySelector('.count-text') as HTMLElement;
+          if (!countText) return;
+          
+          const targetNumber = parseInt(countText.getAttribute('data-stop') || '0', 10);
+          const speed = parseInt(countText.getAttribute('data-speed') || '2000', 10);
+          
+          animateCounter(countText, 0, targetNumber, speed);
+        }
+      });
+    }, observerOptions);
+
+    countBoxes.forEach(box => observer.observe(box));
+
+    function animateCounter(element: HTMLElement, start: number, end: number, duration: number) {
+      const range = end - start;
+      const increment = end > start ? 1 : -1;
+      const stepTime = Math.abs(Math.floor(duration / range));
+      let current = start;
+
+      const timer = setInterval(() => {
+        current += increment;
+        element.textContent = current.toString();
+        
+        if (current === end) {
+          clearInterval(timer);
+        }
+      }, stepTime);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   const latestWorksData = [
   {
     id: 1,
@@ -686,7 +733,7 @@ const pricingPlans = [
 												<span className="icon flaticon-user"></span>
 											</div>
 											<div className="count-outer count-box">
-												<span className="count-text" data-speed="2500" data-stop="1200">0</span>+
+												<span className="count-text" data-speed="2500" data-stop="600">0</span>+
 											</div>
 											<h5 className="counter-title">Satisfied Clients</h5>
 										</div>
@@ -701,7 +748,7 @@ const pricingPlans = [
 												<span className="icon flaticon-cube"></span>
 											</div>
 											<div className="count-outer count-box alternate">
-												<span className="count-text" data-speed="3000" data-stop="850">0</span>+
+												<span className="count-text" data-speed="3000" data-stop="50">0</span>+
 											</div>
 											<h5 className="counter-title">
                       Satisfied Clients
@@ -718,7 +765,7 @@ const pricingPlans = [
 												<span className="icon flaticon-followers"></span>
 											</div>
 											<div className="count-outer count-box">
-												<span className="count-text" data-speed="3000" data-stop="154">0</span>+
+												<span className="count-text" data-speed="3000" data-stop="150">0</span>+
 											</div>
 											<h5 className="counter-title">Implementation Team</h5>
 										</div>
@@ -733,7 +780,7 @@ const pricingPlans = [
 												<span className="icon flaticon-heart"></span>
 											</div>
 											<div className="count-outer count-box">
-												<span className="count-text" data-speed="2500" data-stop="1360">0</span>+
+												<span className="count-text" data-speed="2500" data-stop="500">0</span>+
 											</div>
 											<h5 className="counter-title">Business Modules Delivered</h5>
 										</div>

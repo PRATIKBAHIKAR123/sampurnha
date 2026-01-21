@@ -44,7 +44,7 @@ export default function RootLayout({
         <Script src="/js/popper.min.js" strategy="beforeInteractive" />
         <Script src="/js/bootstrap.min.js" strategy="beforeInteractive" />
         <Script src="/js/owl.js" />
-        <Script src="/js/wow.js" />
+        {/* <Script src="/js/wow.js" /> */}
         <Script src="/js/validate.js" />
         <Script src="/js/jquery.fancybox.js" />
         <Script src="/js/appear.js" />
@@ -52,6 +52,12 @@ export default function RootLayout({
         <Script src="/js/script.js" />
         <Script src="/js/swiper.min.js" />
         <Script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" />
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.0.1/wow.min.js" />
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.0.1/wow.js" />
+        <Script id="wow-script" strategy="afterInteractive">
+                {`new WOW().init();`}
+              </Script>
+              <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.min.js" />
       </body>
     </html>
   );
