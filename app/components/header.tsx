@@ -27,21 +27,21 @@ const Header = () => {
 
 							<div className="navbar-collapse collapse scroll-nav clearfix" id="navbarSupportedContent">
 								<ul className="navigation clearfix">
-									<li className="current dropdown"><a href="#home-banner">Home</a>
-										<ul>
+									<li><a href="#home-banner">Home</a>
+										{/* <ul>
 											<li><a href="#">Home Page 01</a></li>
 											<li><a href="#">Home Page 02</a></li>
 											<li><a href="#">Home Page 03</a></li>
-										</ul>
+										</ul> */}
 									</li>
 									<li><a href="#featured">Features</a></li>
-									<li><a href="#how-works">How it works</a></li>
-									<li><a href="#pricing">Pricing</a></li>
-									<li className="dropdown"><a href="#blog">Blog</a>
-										<ul>
+									<li><a href="#how-works">Our Works</a></li>
+									{/* <li><a href="#pricing">Pricing</a></li> */}
+									<li><a href="#blog">Blog</a>
+										{/* <ul>
 											<li><a href="#">Our Blog</a></li>
 											<li><a href="#">Blog Single</a></li>
-										</ul>
+										</ul> */}
 									</li>
 									<li><a href="#contact">Contact us</a></li>
 								</ul>
